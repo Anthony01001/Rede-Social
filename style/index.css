@@ -1,0 +1,237 @@
+@import url(header.css);
+@import url(globalStyles.css);
+body{
+    font-family: 'Inter';
+    overflow-x: hidden;
+}
+
+header img{
+    width: 120px;
+}
+.lista__section , .interação__container {
+    display: flex;
+}
+.usuario__img{
+    width: 3.125rem;
+    margin: 0 10px;
+}
+.dados__section{
+    transform: translateY(7px);
+}
+.main__container{
+        display: flex;
+        padding: 20px;
+        flex-wrap: wrap;
+}
+.section__container{
+    display: flex;
+    width: 100%;
+}
+.filtro__section{
+    position: relative;
+    width: 65%;
+}
+.lista__container{
+    width: 35%;
+}
+.usuario__img , .usuario-dados__container , .seguir__button{
+    margin: 0 10px;
+}
+.filtro__container{
+    margin-left: -30px;
+}
+.usuario-dados__container{
+    text-align: left;
+    transform: translateX(-25px);
+    margin-left: -20px;
+    padding: 0 25px;
+}
+.usuario-nome_h2{
+width: 160px;
+font-size: var(--title2-font-size);
+font-weight: var(--title2-font-weight);
+line-height: var(--title2-line-height);
+}
+.usuario-funcao__p{
+font-size: var(--text2-font-size);
+font-weight: var(--text2-font-weight);
+line-height: var(--text2-font-line-height);
+color: var(--grey2-color);
+}
+.submit__input{
+    display: block;
+    width: 90%;
+    font-size: var(--text1-font-size);
+    border: 1px solid var(--grey2-color);
+    color: var(--grey2-color);
+    padding: 10px;
+    margin: 10px 0;
+}
+.submit__input:focus{
+    border: 1px solid var(--brand-2);
+   
+}
+.post__button{
+    position: absolute;
+    bottom: -30px;
+    right: 80px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: var(--brand-1);
+    color: var(--grey5-color);
+    
+}
+.post__button:hover{
+    background-color: var(--brand-2);
+}
+#sugestoes__h2{
+    font-size: var(--title2-font-size);
+    font-weight: var(--title2-font-weight);
+    line-height: var(--title2-line-height);
+    margin: 10px 0 25px 15px; 
+}
+.lista__itens{
+    padding: 15px;
+    display: flex;
+margin-left: 20px;}
+    #post-titulo__h2{
+    line-height: var(--title1-line-height);
+    font-size: var(--title1-font-size);
+    font-weight: var(--title1-font-weight);
+    margin-top: 15px;
+    }
+    .seguir__button{
+    background-color:  var(--grey5-color);
+    color: var(--grey-color);
+    transform: translate(-20px,16px);
+    padding: 10px;
+    border: 1px solid black;
+    }
+    .seguir__button:hover{
+        background-color: var(--brand-1);
+        color: var(--grey5-color);
+    }
+    .seguir__button:focus{
+        background-color: var(--brand-2);
+        color: var(--grey5-color);
+    }
+    .article__container{
+    
+        margin-top: 5px;
+        padding: 15px;
+    }
+    .usuario-dados__container{
+        margin: 10px;
+    }
+    .descricao__p{
+        width:80vw;
+        margin-bottom: 20px;
+    }
+    .lista__section{
+    margin: 20px 0;
+    }
+    .titulo__h2{
+        width: 70vw;
+        font-size: var(--title1-font-size);
+        font-weight: var(--title1-font-weight);
+        line-height: var(--title1-line-height);
+        margin: 10px 0;
+    }
+    .descricao__p{
+        width: 70vw;
+        font-size: var(--text1-font-size);
+        font-weight: var(--text1-font-weight);
+        line-height: var(--text1-font-line-height);
+        color: var(--grey3-color);
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    button{
+        border-radius: 3px;
+    }
+    .abrir-post__button{
+        padding: 10px;
+        margin-right: 10px;
+        background-color: var(--grey-color);
+        color: var(--grey5-color);
+        border-radius: 3px;
+    }
+    .abrir-post__button:hover{
+        background-color: var(--grey1-color);
+    }
+    .text2-bold{
+    font-weight: 600;
+    font-size: var(--text2-font-size);}
+   
+    dialog{
+        position: fixed;
+        top: 0px;
+        z-index: 1;
+        overflow-y: auto;
+        padding-bottom:100px;
+       
+    }
+    .close__button{float: right;
+    padding: 10px;
+background-color: var(--like-color);}
+   
+    @media(max-width: 1200px){
+        .filtro__section{
+        position: none;} 
+        .main__container{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+           }
+           .submit__input{
+            width: 75vw;
+           }
+        
+.section__container{
+    display: block;
+    width: 100%;
+}
+.post__button{
+    position: absolute;
+    bottom: -55px;
+    right: -100px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+#sugestoes__container{
+    margin-top: 80px;
+}
+.lista__container{
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    
+}.lista__itens{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;}
+.usuario-nome_h2{
+    width: 155px;
+    }
+    .seguir__button{
+        margin-left: -15px;
+        margin-right: -25px;
+         border: 1px solid black;
+        }
+    
+        dialog{
+            z-index: 1;
+            position: fixed;
+            top: 0px;
+           width: max-content;
+           overflow-y: auto;
+           height: 300px;
+        }  
+        .close__button{
+            margin-left: -20px;
+        }
+
+    }
